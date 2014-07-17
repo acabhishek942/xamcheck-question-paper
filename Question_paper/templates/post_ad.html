@@ -1,0 +1,20 @@
+{% block content %}
+<form action ="/postad/" method="post">{%csrf_token%}
+    <!-- school_name -->
+    <div class="fieldWrapper">
+        {{ form.school_name.errors }}
+        <label for="id_category">School</label>
+        {{ form.school_name }}
+    </div>
+    <!-- class_name -->
+    <div class="fieldWrapper">
+        {{ form.class_name.errors }}
+        <label for="id_name">Class</label>
+        {{ form.class_name }}
+    </div>
+    
+    <button type="submit">
+        <i class="class_attribute"></i> Post
+    </button>
+</form>
+{% endblock %}
