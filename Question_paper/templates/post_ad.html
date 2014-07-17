@@ -1,24 +1,26 @@
 {% block content %}
 <form action ="/postad/" method="post">{%csrf_token%}
     <!-- school_name -->
-    <div class="fieldWrapper">
+    <div class="fieldWrapper" align="center">
         {{ form.school_name.errors }}
         <label for="id_category">School</label>
         {{ form.school_name }}
     </div>
     <!-- class_name -->
-    <div class="fieldWrapper">
+    <div class="fieldWrapper" align="center">
         {{ form.class_name.errors }}
         <label for="id_name">Class</label>
         {{ form.class_name }}
     </div>
     <!-- subject_name -->
-    <div class="fieldWrapper">
+    <div class="fieldWrapper" align="center">
         <label for="id_category">Subject</label>
         {{ form.subject_name }}
     </div>
-    <button type="submit">
-        <i class="class_attribute"></i> Post
-    </button>
+    <div align="center">
+        <button type="submit">
+            <i class="class_attribute"></i> Submit
+        </button>
+    </div>
 </form>
 {% endblock %}
