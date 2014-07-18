@@ -14,6 +14,14 @@ CLASS = (
     ('C4', 'Class 5'),
     ('C5', 'Class 6'),
 )
+SUBJECTS = (
+    ('ENG', 'English'),
+    ('MATHS', 'Mathematics'),
+    ('SS', 'Social Science'),
+    ('SCI', 'Science'),
+    ('TEL', 'Telugu'),
+    ('HIN', 'Hindi'),
+)
 
 
 class PostAdForm(forms.ModelForm):
